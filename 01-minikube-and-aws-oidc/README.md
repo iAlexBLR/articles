@@ -12,7 +12,7 @@ export AWS_PROFILE=personal
 export AWS_REGION=eu-central-1
 kubectl config use-context minikube
 
-./scripts/expose.sh 9000 "${OPENID_FOLDER}"
+./scripts/export.sh 9000 "${OPENID_FOLDER}"
 tree -a "${OPENID_FOLDER}"
 
 cd terraform
